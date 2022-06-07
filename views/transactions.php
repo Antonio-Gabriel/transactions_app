@@ -46,7 +46,7 @@
             <?php if (!empty($transactions)) : ?>
                 <?php foreach ($transactions as $transaction) : ?>
                     <tr>
-                        <td><?= $transaction["date"]; ?></td>
+                        <td><?= formatDate($transaction["date"]); ?></td>
                         <td><?= $transaction["checkNumber"]; ?></td>
                         <td><?= $transaction["description"]; ?></td>
                         <td><?= formatDollarAmount($transaction["amount"]); ?></td>
