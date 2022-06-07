@@ -20,7 +20,10 @@ $files = getTransactionsFile(FILE_PATH);
 
 $transactions = [];
 foreach ($files as $file) {
-    $transactions = array_merge($transactions, getTransactions($file));
+    $transactions = array_merge(
+        $transactions,
+        getTransactions($file, "extractTransaction")
+    );
 }
 
 // prettyPrintArray(
