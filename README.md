@@ -72,4 +72,4 @@ function extractTransaction(array $transactionRow): array
 }
 ```
 
-Thanks for appreciate my study
+Thanks for appreciate my study (AG)
