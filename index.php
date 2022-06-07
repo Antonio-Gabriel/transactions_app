@@ -26,6 +26,8 @@ foreach ($files as $file) {
     );
 }
 
+$totals = calculateTotals($transactions);
+
 // prettyPrintArray(
 //     $transactions
 // );
