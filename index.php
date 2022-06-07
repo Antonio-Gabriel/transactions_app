@@ -14,6 +14,7 @@ define("FILE_PATH", $root . "transactionFile" . DIRECTORY_SEPARATOR);
  */
 
 require APP_PATH . "app.php";
+require HELPERS_PATH . "formatDate.php";
 require HELPERS_PATH . "prettyPrintArray.php";
 require HELPERS_PATH . "formatDollarAmount.php";
 
