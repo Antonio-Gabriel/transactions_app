@@ -6,7 +6,7 @@ $root = __DIR__ . DIRECTORY_SEPARATOR;
 
 define("APP_PATH", $root . "app" . DIRECTORY_SEPARATOR);
 define("VIEWS_PATH", $root . "views" . DIRECTORY_SEPARATOR);
-define("HELPERS_PATH", $root . "helpers" . DIRECTORY_SEPARATOR);
+define("HELPERS_PATH", APP_PATH . "helpers" . DIRECTORY_SEPARATOR);
 define("FILE_PATH", $root . "transactionFile" . DIRECTORY_SEPARATOR);
 
 /**
@@ -15,6 +15,7 @@ define("FILE_PATH", $root . "transactionFile" . DIRECTORY_SEPARATOR);
 
 require APP_PATH . "app.php";
 require HELPERS_PATH . "prettyPrintArray.php";
+require HELPERS_PATH . "formatDollarAmount.php";
 
 $files = getTransactionsFile(FILE_PATH);
 
