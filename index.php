@@ -8,4 +8,11 @@ define("APP_PATH", $root . "app" . DIRECTORY_SEPARATOR);
 define("VIEWS_PATH", $root . "views" . DIRECTORY_SEPARATOR);
 define("FILE_PATH", $root . "transactionFile" . DIRECTORY_SEPARATOR);
 
-print($root);
+/**
+ * Modules requires
+ */
+
+require APP_PATH . "app.php";
+
+$files = getTransactionsFile(FILE_PATH);
+var_dump($files);
