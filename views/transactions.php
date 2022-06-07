@@ -59,17 +59,17 @@
         <tfoot>
             <tr>
                 <th colspan="3">Total Income:</th>
-                <td></td>
+                <td><?= $totals["totalIncome"] ?? 0; ?></td>
             </tr>
 
             <tr>
                 <th colspan="3">Total Expense:</th>
-                <td></td>
+                <td><?= $totals["totalExpense"] ?? 0; ?></td>
             </tr>
 
             <tr>
                 <th colspan="3">Net Total:</th>
-                <td></td>
+                <td><?= $totals["netTotal"] ?? 0; ?></td>
             </tr>
         </tfoot>
     </table>
